@@ -20,7 +20,7 @@ data/           # Datasets and precomputed embeddings
 The data used in our experiments can be downloaded from:
 
 https://mega.nz/folder/53YWVJLL#nnBta-z8z4UQzeSQaAb80A
-
+ 
 Extract the contents into the `data/` directory before running experiments.
 
 ## Vision–Language Data Structure
