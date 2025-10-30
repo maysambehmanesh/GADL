@@ -1,7 +1,7 @@
 
 # Graph Alignment via Dual-Pass Spectral Encoding and Latent Space Communication
 
-Official PyTorch implementation of the paper:
+PyTorch implementation of the paper:
 
 **[Graph Alignment via Dual-Pass Spectral Encoding and Latent Space Communication](https://arxiv.org/abs/2509.09597)**  
 *Maysam Behmanesh, Erkan Turan, Maks Ovsjanikov*
