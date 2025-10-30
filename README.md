@@ -36,8 +36,8 @@ data/vision-language/
 │   └── prompt_5/                # Language embeddings for CIFAR-10 and CINIC-10
 ├── Language-100/
 │   └── prompt_5/                # Language embeddings for CIFAR-100
-├── Language100-ImageNet/
-│   └── prompt_5/                # Language embeddings for ImageNet-100
+└─ Language100-ImageNet/
+    └── prompt_5/                # Language embeddings for ImageNet-100
 
 ```
 
