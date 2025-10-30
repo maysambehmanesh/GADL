@@ -60,8 +60,6 @@ python GADL-VL/alignment_VL.py
 ```
 
 ### Custom Training Configuration
-All training configurations are managed through the Lightning CLI system.
-
 You can modify hyperparameters, datasets, or model options in:
 ```bash
 config.yml
