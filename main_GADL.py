@@ -27,11 +27,7 @@ def run_GADL(data, GAE_model, train_adj, train_features, args, device, test_pair
     X2 = train_features[list(keys)[1]][0]
     
     X1 = X1.to(device)
-    X2 = X2.to(device)
-
-    x_bi , S_bi = compute_bipartite_graph(X1, X2)
-    S_bi = S_bi.to(device)
-    
+    X2 = X2.to(device)   
         
     if os.path.exists(f'eigs/{data}'):
         L1 = torch.load(f'eigs/{data}/L1.pth')
