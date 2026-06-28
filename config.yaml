@@ -1,0 +1,71 @@
+ACM_DBLP:
+  input_dim: 17  # 17
+  num_hidden_layers: 1
+  hidden_dim: 1024
+  output_feature_size: 1024
+  residual: True
+  lr: 0.0001
+  epoch: 50
+
+
+Douban Online_Offline:
+  input_dim: 538
+  num_hidden_layers: 3  #6
+  hidden_dim: 512
+  output_feature_size: 512
+  residual: False
+  lr: 0.0001
+  epoch: 100
+
+
+
+CINIC-10:
+  input_dim: 768
+  num_hidden_layers: 5
+  hidden_dim: 512
+  output_feature_size: 512
+  lr: 0.01
+  epoch: 100
+  k: 9
+  k_neig: 5
+  vision: CLIP_ViT-L_14@336
+  language: ViT-L_14@336px      
+
+
+CIFAR-10:
+  input_dim: 768
+  num_hidden_layers: 5
+  hidden_dim: 512
+  output_feature_size: 512
+  lr: 0.01
+  epoch: 100
+  k: 9
+  k_neig: 5    # 5~10
+  vision: CLIP_ViT-L_14@336 
+  language: All-Roberta-large-v1  
+
+
+CIFAR-100:
+  input_dim: 768
+  num_hidden_layers: 5
+  hidden_dim: 512
+  output_feature_size: 512
+  lr: 0.01
+  epoch: 100
+  k: 90
+  k_neig: 20
+  vision: CLIP_ViT-L_14@336 
+  language: All-Roberta-large-v1 
+
+
+Imagenet-100:
+  input_dim: 768
+  num_hidden_layers: 5
+  hidden_dim: 512
+  output_feature_size: 512
+  lr: 0.01
+  epoch: 100
+  k: 90
+  k_neig: 20
+  vision: CLIP_ViT-L_14
+  language: ViT-L_14
