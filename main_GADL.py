@@ -82,7 +82,7 @@ def run_GADL(data, GAE_model, train_adj, train_features, args, device, test_pair
         for step in range(1,args.epoch+1):
             GAE_model.train()
 
-            z1_h, z1_l, z2_h, z2_l = GAE_model(X1, adj1, X2, adj2, S_bi)      
+            z1_h, z1_l, z2_h, z2_l = GAE_model(X1, adj1, X2, adj2)      
 
             z1 = torch.cat([z1_h, z1_l],dim=1)
             z2 = torch.cat([z2_h, z2_l],dim=1)
@@ -112,7 +112,7 @@ def run_GADL(data, GAE_model, train_adj, train_features, args, device, test_pair
 
     GAE_model.eval()
     with torch.no_grad():
-        S_emb1_h, S_emb1_l, S_emb2_h, S_emb2_l = GAE_model(X1.to(device), adj1, X2.to(device), adj2, S_bi)
+        S_emb1_h, S_emb1_l, S_emb2_h, S_emb2_l = GAE_model(X1.to(device), adj1, X2.to(device), adj2)
             
         S_emb1 = torch.cat([S_emb1_h, S_emb1_l],dim=1)
         S_emb2 = torch.cat([S_emb2_h, S_emb2_l],dim=1)    
