@@ -159,7 +159,7 @@ class Encoder_GAE_FM(nn.Module):
     def corruption(x, edge_index, edge_weight):
         return x[torch.randperm(x.size(0))], edge_index, edge_weight
 
-    def forward(self, x1, edge_index1, x2, edge_index2, S_bi, edge_weight1=None, edge_weight2=None):
+    def forward(self, x1, edge_index1, x2, edge_index2, edge_weight1=None, edge_weight2=None):
         Z1_h, Z1_l = self.encoder1(x1, edge_index1)
         Z2_h, Z2_l = self.encoder2(x2, edge_index2)
                    
