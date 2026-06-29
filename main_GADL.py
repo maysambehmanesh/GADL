@@ -1,5 +1,4 @@
 from algorithm import *
-# from graphMatching import *
 from networkx import read_edgelist
 from scipy.io import loadmat
 from model import *
